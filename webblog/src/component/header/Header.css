@@ -1,0 +1,39 @@
+.header {
+    background-color: #1890ff;
+    /* background-color: #ffffff; */
+    height: 60px;
+    color: #ffffff;
+}
+.headerBox{
+    /* border: 1px solid #000; */
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+.col {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.logo {
+    /* width: 100px; */
+}
+.logo .logoName {
+    font-size: 18px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+.info {
+    display: flex;
+}
+.info .divs {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+}
+.divs span {
+    margin-left: 5px;
+    cursor: pointer;
+}

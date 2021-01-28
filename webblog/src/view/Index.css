@@ -1,0 +1,6 @@
+.index {
+    width: 100vw;
+    height: 100vh;
+    background: url('/src/static/assets/img/jiansan.jpg');
+    background-size: 100% 100%;
+}
