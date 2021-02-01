@@ -1,3 +1,34 @@
 /* .rightContent {
     
 } */
+.people {
+    background-color: #ffffff;
+}
+.people .ant-list-item {
+    padding: 10px 12px;
+}
+.people .ant-list-item-meta-title {
+    text-align: left;
+}
+.people .ant-list-item-action {
+    margin-left: 9px;
+}
+.people .ant-list-item-meta-description {
+    text-align: left;
+}
+.people .addUser {
+    background-color: #ebf2ff;
+    border: none;
+}
+.people .addUser:hover{
+    background-color: #ffffff;
+    border: 1px solid #1890ff;
+}
+.people .user_note{
+    display: inline-block;
+    font-size: 12px;
+    width: 166px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
