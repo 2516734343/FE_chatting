@@ -19,7 +19,7 @@
     left: 13%;
     width: 16%;
     z-index: 999;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
 .right {
     position: absolute;
@@ -28,7 +28,7 @@
     right: 13%;
     width: 16%;
     z-index: 999;
-    background-color: #ffffff;
+    /* background-color: #ffffff; */
 }
 .main {
     position: absolute;
@@ -39,5 +39,5 @@
     z-index: 999;
     width: 40%;
     margin: 0 20px;
-    background-color: #fff;
+    /* background-color: #fff; */
 }
