@@ -9,7 +9,7 @@ export default class LeftView extends Component {
             <div className="leftContent">
                 <UserInfo/>
                 <ToolBar/>
-                {/* <Activation/> */}
+                <Activation/>
             </div>
         )
     }

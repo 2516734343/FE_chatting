@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { List, Avatar, Button, Skeleton, Space } from 'antd';
-import { DeleteOutlined, MessageOutlined, LikeOutlined, StarOutlined, UserAddOutlined } from '@ant-design/icons';
+import { SmileTwoTone, UserAddOutlined } from '@ant-design/icons';
 export default class People extends Component {
     state = {
         userList: [
@@ -45,7 +45,7 @@ export default class People extends Component {
     render() {
         return (
             <div className="people">
-                <div>好友推荐</div>
+                <div className="user-recom"><SmileTwoTone style={{marginRight: '5px'}}/>好友推荐</div>
                 <List itemLayout="horizontal"
                     dataSource={this.state.userList}
                     renderItem={item => (
@@ -60,7 +60,6 @@ export default class People extends Component {
                                 title={<span>{item.name}</span>}
                                 description={<span className="user_note">{item.note}</span>}
                             />
-                            {/* <div>content</div> */}
                         </List.Item>
                     )}>
                 </List>

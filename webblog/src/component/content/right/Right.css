@@ -1,8 +1,16 @@
 /* .rightContent {
     
 } */
+/* 好友推荐 */
 .people {
     background-color: #ffffff;
+}
+.people .user-recom {
+    padding: 10px 0px 10px 10px;
+    font-size: 15px;
+    text-align: left;
+    font-weight: 700;
+    border-bottom: 1px solid #f0f0f0;
 }
 .people .ant-list-item {
     padding: 10px 12px;
@@ -31,4 +39,51 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+/* 点赞量前五帖子 */
+.hot {
+    margin-top: 20px;
+    background-color: #ffffff;
+    padding-bottom: 10px;
+}
+.hot .hot-title {
+    padding: 10px 0px 10px 10px;
+    font-size: 15px;
+    text-align: left;
+    font-weight: 700;
+    border-bottom: 1px solid #f0f0f0;
+}
+.hot li {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 20px;
+    cursor: pointer;
+}
+.hot li .hotComment {
+    color: #333333;
+}
+.hot li .like {
+    color: #808080;
+}
+.hot li:hover {
+    font-size: 15px;
+}
+.hot li:hover .hotComment{
+    color: #eb7390;
+}
+.notice {
+    background-color: #ffffff;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+.notice .notice-title {
+    padding: 10px 0px 10px 10px;
+    font-size: 15px;
+    text-align: left;
+    font-weight: 700;
+    border-bottom: 1px solid #f0f0f0;
+}
+.notice .notice-content {
+    padding: 10px;
+    color: #eb7350;
 }
