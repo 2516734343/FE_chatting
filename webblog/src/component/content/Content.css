@@ -9,15 +9,15 @@
     bottom: 0;
     display: flex;
     /* margin: 20px auto 0px auto; */
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     /* height: calc(100% - 90px); */
 }
 .left {
     position: absolute;
     top: 20px;
     bottom: 0px;
-    left: 13%;
-    width: 16%;
+    left: 10%;
+    width: 18%;
     z-index: 999;
     /* background-color: #fff; */
 }
@@ -25,19 +25,21 @@
     position: absolute;
     top: 20px;
     bottom: 0px;
-    right: 13%;
-    width: 16%;
+    right: 10%;
+    width: 18%;
     z-index: 999;
     /* background-color: #ffffff; */
 }
 .main {
+    height: calc(100vh - 80px);
     position: absolute;
     top: 20px;
-    left: 29%;
-    right: 29%;
+    left: 28%;
+    right: 28%;
     bottom: 0px;
     z-index: 999;
-    width: 40%;
+    width: 42%;
     margin: 0 20px;
+    overflow: auto;
     /* background-color: #fff; */
 }

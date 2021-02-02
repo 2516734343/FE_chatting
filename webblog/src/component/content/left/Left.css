@@ -45,11 +45,18 @@
     background-color: #e6f7ff;
 }
 .activation {
+    margin-top: 20px;
     width: 100%;
     height: 400px;
     background-color: #fff;
 }
 .activation #activeTable {
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
+    margin: 0 auto;
+}
+.activation .active-title {
+    font-size: 15px;
+    font-weight: 700;
+    padding-top: 10px;
 }
