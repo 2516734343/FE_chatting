@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4739cead-3a3a-4486-a61b-cd0ceae1876e" name="Default Changelist" comment="" />
+    <list default="true" id="4739cead-3a3a-4486-a61b-cd0ceae1876e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/content/left/ToolBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/content/left/ToolBar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/content/main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/content/main/Main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/content/main/Post.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/content/main/Post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/content/main/SendPost.js" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,6 +64,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611713822503</updated>
       <workItem from="1611713825584" duration="422000" />
+      <workItem from="1614737487702" duration="2019000" />
     </task>
     <servers />
   </component>
