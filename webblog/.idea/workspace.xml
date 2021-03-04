@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4739cead-3a3a-4486-a61b-cd0ceae1876e" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/content/left/ToolBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/content/left/ToolBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/content/main/Main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/content/main/Main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/content/main/Post.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/content/main/Post.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/content/main/SendPost.js" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/fetch/fetch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/fetch/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,16 +37,27 @@
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/utils" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.stylelint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.stylelint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.standard" value="" />
-    <property name="node.js.selected.package.tslint" value="$USER_HOME$/repo/thor_test/thor_test" />
+    <property name="node.js.selected.package.stylelint" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Confirmation" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/utils" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -64,11 +70,17 @@
       <option name="presentableId" value="Default" />
       <updated>1611713822503</updated>
       <workItem from="1611713825584" duration="422000" />
-      <workItem from="1614737487702" duration="2019000" />
+      <workItem from="1614737487702" duration="3127000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="477" y="74" key="CommitChangelistDialog2" timestamp="1614834159169">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="477" y="74" key="CommitChangelistDialog2/0.0.1792.1120/-2560.-88.2560.1440@0.0.1792.1120" timestamp="1614834159169" />
   </component>
 </project>
