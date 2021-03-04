@@ -1,10 +1,10 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import css from './App.less';
 import Index from './view/Index';
 function App() {
   return (
-    <div className="App">
+    <div className={css.App}>
       <Index/>
     </div>
   );

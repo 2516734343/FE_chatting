@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './Index.css';
+import './index.css';
 import Header from '../component/header/Header';
 import Content from '../component/content/Content';
 export default class componentName extends Component {
