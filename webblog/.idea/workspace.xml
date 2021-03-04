@@ -1,35 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4739cead-3a3a-4486-a61b-cd0ceae1876e" name="Default Changelist" comment="fix: 项目配置">
-      <change afterPath="$PROJECT_DIR$/config/env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/getHttpsConfig.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/jest/cssTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/jest/fileTransform.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/modules.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/paths.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/pnpTs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/webpackDevServer.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/start.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/test.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/login/Login.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
+    <list default="true" id="4739cead-3a3a-4486-a61b-cd0ceae1876e" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +77,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611713822503</updated>
       <workItem from="1611713825584" duration="422000" />
-      <workItem from="1614737487702" duration="10546000" />
+      <workItem from="1614737487702" duration="10752000" />
     </task>
     <task id="LOCAL-00001" summary="fix: 增加接口配置文件">
       <created>1614834159533</created>
@@ -120,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614834187716</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix: 项目配置">
+      <created>1614862871132</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1614862871133</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,10 +117,10 @@
     </state>
     <state x="496" y="225" key="#Stylelint/0.0.1792.1120/-2560.-88.2560.1440@0.0.1792.1120" timestamp="1614836312638" />
     <state x="496" y="225" key="#Stylelint/0.0.1792.1120@0.0.1792.1120" timestamp="1614862685487" />
-    <state x="477" y="74" key="CommitChangelistDialog2" timestamp="1614862853950">
+    <state x="477" y="74" key="CommitChangelistDialog2" timestamp="1614862959981">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
     <state x="477" y="74" key="CommitChangelistDialog2/0.0.1792.1120/-2560.-88.2560.1440@0.0.1792.1120" timestamp="1614834187548" />
-    <state x="477" y="74" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1614862853950" />
+    <state x="477" y="74" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1614862959981" />
   </component>
 </project>
