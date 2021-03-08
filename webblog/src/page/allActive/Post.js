@@ -91,7 +91,7 @@ export default class Post extends Component {
                     note: '我是一条不想翻身的咸鱼。'
                 }
             }
-          
+
         ]
     }
 
@@ -110,7 +110,7 @@ export default class Post extends Component {
                         <List.Item actions={[
                             <IconText icon={LikeOutlined} text={item.like} key="list-vertical-like-o" />,
                             <IconText icon={MessageOutlined} text={item.commtnCount} key="list-vertical-message" />,
-                        ]}>             
+                        ]}>
                             <div className="item">
                                 <div className="top">
                                     <div className="userInfo">

@@ -1,0 +1,47 @@
+.login {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("@/static/assets/img/cloud.jpeg");
+}
+.login .loginWrap {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 500px;
+    /*height: 500px;*/
+    transform: translate(-250px, -250px);
+    background: #ffffff;
+    padding: 20px;
+}
+.loginBox {
+    margin-top: 24px;
+    padding: 0px 20px 20px 20px;
+}
+.item {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+}
+.item .label {
+    width: 70px;
+    text-align: left;
+    display: inline-block;
+}
+.item .required {
+    color: red;
+}
+.item input {
+    flex: 1;
+    border-radius: 4px;
+}
+.item .ant-select-selector {
+    border-radius: 4px;
+}
+.registerForm .ant-upload.ant-upload-select-picture-card {
+        width: 85px;
+        height: 85px;
+}
+
