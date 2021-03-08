@@ -1,11 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import css from './App.less';
-import Index from './view/Index';
+import MyRoute from './page/index';
 function App() {
   return (
     <div className={css.App}>
-      <Index/>
+      <MyRoute/>
     </div>
   );
 }

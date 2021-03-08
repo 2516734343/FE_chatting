@@ -13,7 +13,7 @@ function Async(url = "", data = {}, type = "GET") {
     this.init = function () {
         this.url = baseUrl + this.url;
         this.type = this.type.toUpperCase();
-        if (type == "GET") {
+        if (type === "GET") {
             let dataStr = ""; // 数据拼接字符串
             Object.keys(this.data).forEach((key) => {
                 dataStr += `${key}=${this.data[key]}&`;
@@ -51,7 +51,7 @@ function Async(url = "", data = {}, type = "GET") {
             mode: "cors",
             cache: "no-cache",
         };
-        if (this.type == "POST") {
+        if (this.type === "POST") {
             Object.defineProperty(requestConfig, "body", {
                 value: JSON.stringify(this.data),
             });
@@ -59,7 +59,7 @@ function Async(url = "", data = {}, type = "GET") {
         this.runHttpProvider("request", requestConfig);
         var response = await fetch(this.url, requestConfig);
         let responseJson = {};
-        if (response.status == 200) {
+        if (response.status === 200) {
             try {
                 responseJson = await response.json();
             } catch (e) {
@@ -67,7 +67,7 @@ function Async(url = "", data = {}, type = "GET") {
             }
         }
         this.runHttpProvider("response", response, responseJson);
-        if (response.status == 200) {
+        if (response.status === 200) {
             return responseJson;
         }
         return false;
@@ -82,15 +82,15 @@ function Async(url = "", data = {}, type = "GET") {
                 requestObj = new ActiveXObject();
             }
             let sendData = "";
-            if (this.type == "POST") {
+            if (this.type === "POST") {
                 sendData = JSON.stringify(this.data);
             }
             requestObj.open(this.type, this.url, true);
             requestObj.setRequestHeader("Content-type", "application/json");
             requestObj.send(sendData);
             requestObj.onreadystatechange = () => {
-                if (requestObj.readyState == 4) {
-                    if (requestObj.status == 200) {
+                if (requestObj.readyState === 4) {
+                    if (requestObj.status === 200) {
                         let obj = requestObj.response;
                         if (typeof obj !== "object") {
                             obj = JSON.parse(obj);
