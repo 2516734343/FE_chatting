@@ -1,38 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4739cead-3a3a-4486-a61b-cd0ceae1876e" name="Default Changelist" comment="fix: 项目配置">
-      <change afterPath="$PROJECT_DIR$/src/importComponent.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/homePage/HomePage.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/homePage/HomePage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/login/Login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/remote/common/register.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/remote/common/tag.list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/remote/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routeConfig.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/AsyncComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/content/Content.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/content/Content.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/content/left/ToolBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/content/left/ToolBar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/content/main/Main.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/layout/Layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/content/main/Main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/content/main/allActive/Post.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/allActive/Post.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/content/main/allActive/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/allActive/Post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/content/main/allActive/SendPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/allActive/SendPost.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/content/main/chatRoom/ChatRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/chatRoom/ChatRoom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/fetch/fetch.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/fetch/fetch.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/fetch/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/fetch/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/index.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/login/Login.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/login/Login.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/login/Login.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/layout/Layout.less" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
-    </list>
+    <list default="true" id="4739cead-3a3a-4486-a61b-cd0ceae1876e" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +83,7 @@
       <workItem from="1611713825584" duration="422000" />
       <workItem from="1614737487702" duration="20118000" />
       <workItem from="1615096411834" duration="4125000" />
-      <workItem from="1615196059280" duration="5534000" />
+      <workItem from="1615196059280" duration="5713000" />
     </task>
     <task id="LOCAL-00001" summary="fix: 增加接口配置文件">
       <created>1614834159533</created>
@@ -144,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1614862976689</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix: 登陆和注册">
+      <created>1615209377558</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615209377558</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,7 +129,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix: 增加接口配置文件" />
     <MESSAGE value="fix: 项目配置" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: 项目配置" />
+    <MESSAGE value="fix: 登陆和注册" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: 登陆和注册" />
   </component>
   <component name="WindowStateProjectService">
     <state x="476" y="237" key="#ESLint" timestamp="1615208530997">
@@ -165,12 +142,12 @@
     </state>
     <state x="496" y="225" key="#Stylelint/0.0.1792.1120/-2560.-88.2560.1440@0.0.1792.1120" timestamp="1614836312638" />
     <state x="496" y="225" key="#Stylelint/0.0.1792.1120@0.0.1792.1120" timestamp="1614862685487" />
-    <state x="467" y="95" key="CommitChangelistDialog2" timestamp="1615209343335">
+    <state x="467" y="95" key="CommitChangelistDialog2" timestamp="1615209374911">
       <screen x="0" y="23" width="1755" height="1097" />
     </state>
     <state x="477" y="74" key="CommitChangelistDialog2/0.0.1792.1120/-2560.-88.2560.1440@0.0.1792.1120" timestamp="1614912127200" />
     <state x="477" y="74" key="CommitChangelistDialog2/0.0.1792.1120@0.0.1792.1120" timestamp="1614862976531" />
-    <state x="467" y="95" key="CommitChangelistDialog2/0.23.1755.1097@0.23.1755.1097" timestamp="1615209343335" />
+    <state x="467" y="95" key="CommitChangelistDialog2/0.23.1755.1097@0.23.1755.1097" timestamp="1615209374911" />
     <state x="397" y="199" key="SettingsEditor" timestamp="1614911132270">
       <screen x="0" y="0" width="1792" height="1120" />
     </state>
