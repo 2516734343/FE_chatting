@@ -40,6 +40,8 @@ export default async (url = "", data = {}, type = "GET", notify = false) => {
                     }, 3000);
                     // throw new Error();
                     return responseJson;
+                } else {
+                    message.error(`操作失败,请联系管理员,错误代码${response.status}`);
                 }
                 // Message({
                 //     message: `操作失败,请联系管理员,错误代码${response.status}`,
@@ -47,8 +49,8 @@ export default async (url = "", data = {}, type = "GET", notify = false) => {
                 //     showClose: true,
                 //     duration: 2000
                 // });
-                message.error(`操作失败,请联系管理员,错误代码${response.status}`);
-                throw new Error();
+
+                // throw new Error();
             }
         };
     };

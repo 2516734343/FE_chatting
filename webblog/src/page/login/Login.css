@@ -26,7 +26,7 @@
     align-items: center;
 }
 .item .label {
-    width: 70px;
+    width: 75px;
     text-align: left;
     display: inline-block;
 }
@@ -43,5 +43,23 @@
 .registerForm .ant-upload.ant-upload-select-picture-card {
         width: 85px;
         height: 85px;
+}
+.item .ant-select-selection-item {
+    text-align: left;
+}
+.tagList {
+    display: flex;
+    flex-wrap: wrap;
+}
+.tag {
+    display: inline-block;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    cursor: pointer;
+}
+.item .ant-upload-picture-card-wrapper {
+    text-align: left;
 }
 
