@@ -4,11 +4,16 @@ import css from './index.less';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 // import 'antd/dist/antd.less';
+import { configure } from 'mobx';
 
+import { Provider } from 'mobx-react';
+import userStore from './store/userInfo';
+const stores = { userStore };
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider {...stores}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode></Provider>,
   document.getElementById('root')
 );
 
