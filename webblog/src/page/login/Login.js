@@ -6,7 +6,7 @@ import { UserOutlined, UnlockOutlined } from '@ant-design/icons';
 import RouteConfig from '@/routeConfig.js';
 import { observe } from 'web-vitals/dist/lib/observe';
 import { action, observable, runInAction } from 'mobx';
-import ImgCrop from 'antd-img-crop';
+// import ImgCrop from 'antd-img-crop';
 import { register, login } from '@/remote';
 import Register from './Register';
 

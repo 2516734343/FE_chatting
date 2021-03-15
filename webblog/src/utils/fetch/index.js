@@ -6,7 +6,7 @@ export default async (url = "", data = {}, type = "GET", notify = false) => {
     $http.httpProvider = function () {
         return {
             response(response, responseJson) {
-                if (response.status == 200) {
+                if (response.status === 200) {
                     if (notify && responseJson) {
                         if (responseJson.status === "success") {
                             // Message({
@@ -29,7 +29,7 @@ export default async (url = "", data = {}, type = "GET", notify = false) => {
                     }
                     return responseJson;
                 }
-                if (response.status == 401) {
+                if (response.status === 401) {
                     // Message({
                     //     type: 'error',
                     //     message: "登录超时,3秒后退出登录"

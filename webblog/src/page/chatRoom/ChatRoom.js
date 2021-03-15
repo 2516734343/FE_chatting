@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-
-export default class ChatRoom extends Component {
+import {withRouter } from "react-router";
+class ChatRoom extends Component {
     render() {
         return (
             <div>
@@ -9,3 +9,5 @@ export default class ChatRoom extends Component {
         )
     }
 }
+
+export default withRouter(ChatRoom);

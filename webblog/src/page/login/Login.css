@@ -20,12 +20,12 @@
     margin-top: 24px;
     padding: 0px 20px 20px 20px;
 }
-.item {
+.login .item {
     margin-top: 24px;
     display: flex;
     align-items: center;
 }
-.item .label {
+.login .item .label {
     width: 75px;
     text-align: left;
     display: inline-block;
@@ -33,25 +33,25 @@
 .item .required {
     color: red;
 }
-.item input {
+.login .item input {
     flex: 1;
     border-radius: 4px;
 }
-.item .ant-select-selector {
+.login .item .ant-select-selector {
     border-radius: 4px;
 }
 .registerForm .ant-upload.ant-upload-select-picture-card {
         width: 85px;
         height: 85px;
 }
-.item .ant-select-selection-item {
+.login .item .ant-select-selection-item {
     text-align: left;
 }
 .tagList {
     display: flex;
     flex-wrap: wrap;
 }
-.tag {
+.login .tag {
     display: inline-block;
     padding: 5px;
     margin-right: 10px;
@@ -59,7 +59,7 @@
     background-color: #ffffff;
     cursor: pointer;
 }
-.item .ant-upload-picture-card-wrapper {
+.login .item .ant-upload-picture-card-wrapper {
     text-align: left;
 }
 
