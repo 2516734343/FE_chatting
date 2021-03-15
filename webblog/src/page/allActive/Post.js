@@ -1,140 +1,151 @@
-import React, { Component } from 'react'
-import { List, Avatar, Button, Skeleton, Space } from 'antd';
-import { DeleteOutlined, MessageOutlined, LikeOutlined, StarOutlined } from '@ant-design/icons';
+import React, { Component } from 'react';
+import { withRouter } from "react-router";
+import { List, Avatar, Button, Skeleton, Space, Input, message } from 'antd';
+import { DeleteOutlined, MessageOutlined, LikeOutlined, EditOutlined } from '@ant-design/icons';
 import moment from 'moment';
-import './Post.css';
-export default class Post extends Component {
+import css from './Post.less';
+import { getInvitationList, releasePost } from '@/remote';
+import { observer } from 'mobx-react';
+import RouteConfig from '@/routeConfig';
+const { TextArea } = Input;
+
+class Post extends Component {
     state = {
-        commentList: [
-            {
-                id: 1,
-                comment: '火山突兀赤亭口，火山五月火云厚。火云满山凝未开，飞鸟千里不敢来。平明乍逐胡风断，薄暮浑随塞雨回。火云满山凝未开，飞鸟千里不敢来。平明乍逐胡风断，薄暮浑随塞雨回。',
-                like: 20,
-                commtnCount: 0,
-                canDelete: true,
-                time: 1612160835568,
-                userInfo: {
-                    userId: 1,
-                    name: '我是一个小辣椒',
-                    age: 18,
-                    sex: 0,
-                    avatarUrl: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3155998395,3600507640&fm=26&gp=0.jpg',
-                    tag: [{ name: '互联网民工', color: 'magenta' }, { name: '小清新', color: 'green' }, { name: '技术宅', color: 'blue' }, { name: '二次元', color: 'purple' }],
-                    note: '我是一条不想翻身的咸鱼。'
-                }
-            },
-            {
-                id: 1,
-                comment: '在目前的扶贫政策下，像视频里这对父子这类人，有各种扶贫政策给他们钱，对于他们来说，干不干活都已经不重要了，越懒越养，越养越懒。',
-                like: 940,
-                commtnCount: 650,
-                canDelete: true,
-                time: 1612160935789,
-                userInfo: {
-                    userId: 1,
-                    name: '我是一个小辣椒',
-                    age: 18,
-                    sex: 0,
-                    avatarUrl: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3155998395,3600507640&fm=26&gp=0.jpg',
-                    tag: [{ name: '互联网民工', color: 'magenta' }, { name: '小清新', color: 'green' }, { name: '技术宅', color: 'blue' }, { name: '二次元', color: 'purple' }],
-                    note: '我是一条不想翻身的咸鱼。'
-                }
-            },
-            {
-                id: 1,
-                comment: '情人节你期待什么样的惊喜吗？2021年情人节是如此与众不同，虽然不能和爱人远行、不能旅行、更不能远赴异国度假。在枯燥的宅家生活中，情人节的仪式感显得尤为重要了。用心对待这个特殊的情人节，用心陪伴爱人，相信在情人节收获一份爱的礼物会是多么的感动',
-                like: 621,
-                commtnCount: 750,
-                canDelete: true,
-                time: 1612180835568,
-                userInfo: {
-                    userId: 1,
-                    name: '我是一个小辣椒',
-                    age: 18,
-                    sex: 0,
-                    avatarUrl: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3155998395,3600507640&fm=26&gp=0.jpg',
-                    tag: [{ name: '互联网民工', color: 'magenta' }, { name: '小清新', color: 'green' }, { name: '技术宅', color: 'blue' }, { name: '二次元', color: 'purple' }],
-                    note: '我是一条不想翻身的咸鱼。'
-                }
-            },
-            {
-                id: 1,
-                comment: 'Jackson不喜欢黄景瑜，王嘉尔忙圆场，陈学冬带娃有妙招戚薇点赞,萌娃和帅哥太养眼了。哥哥们养娃太可爱了。',
-                like: 901,
-                commtnCount: 1024,
-                canDelete: true,
-                time: 1612360835568,
-                userInfo: {
-                    userId: 1,
-                    name: '我是一个小辣椒',
-                    age: 18,
-                    sex: 0,
-                    avatarUrl: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3155998395,3600507640&fm=26&gp=0.jpg',
-                    tag: [{ name: '互联网民工', color: 'magenta' }, { name: '小清新', color: 'green' }, { name: '技术宅', color: 'blue' }, { name: '二次元', color: 'purple' }],
-                    note: '我是一条不想翻身的咸鱼。'
-                }
-            },
-            {
-                id: 1,
-                comment: '回家过年了。',
-                like: 90,
-                commtnCount: 20,
-                canDelete: true,
-                time: 1612560835568,
-                userInfo: {
-                    userId: 1,
-                    name: '我是一个小辣椒',
-                    age: 18,
-                    sex: 0,
-                    avatarUrl: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=3155998395,3600507640&fm=26&gp=0.jpg',
-                    tag: [{ name: '互联网民工', color: 'magenta' }, { name: '小清新', color: 'green' }, { name: '技术宅', color: 'blue' }, { name: '二次元', color: 'purple' }],
-                    note: '我是一条不想翻身的咸鱼。'
-                }
-            }
-
-        ]
+        dataList: [],
+        loading: false,
+        pageNo: 1,
+        pageSize: 10,
+        total: 0,
+        contentValue: '',
+    };
+    componentDidMount() {
+        this.getDataList();
     }
+    getDataList = async () => {
+        this.setState({
+            loading: true,
+        });
+        try {
+            const params = {
+                pageNo: this.state.pageNo,
+                pageSize: this.state.pageSize,
+            };
+            const resp = await getInvitationList(params);
+            if (resp.status === 200) {
+                this.setState({
+                    dataList: resp.data.list,
+                    total: resp.data.total,
+                })
+            }
+        } catch (e) {
+        } finally {
+            this.setState({
+                loading: false
+            })
+        }
+    };
+    contentValueChange = (e) => {
+        this.setState({
+            contentValue: e.target.value
+        })
 
-    render() {
+    };
+    clearAll = () => {
+        this.setState({
+            contentValueChange: ''
+        })
+    };
+    releaseContent = async () => {
+        const params = {
+            userId: window.localStorage.getItem('userId'),
+            content: this.state.contentValue
+        };
+        const resp = await releasePost(params);
+        if (resp.status === 200) {
+            message.success('发布成功');
+            this.setState({
+                contentValue: ''
+            });
+            this.getDataList();
+        }
+    };
+    goToDetail = (item) => {
+        this.props.history.push(RouteConfig.activeDeatil + `?id=${item.id}`)
+    }
+    renderList() {
         const IconText = ({ icon, text }) => (
             <Space>
-              {React.createElement(icon)}
-              {text}
+                {React.createElement(icon)}
+                {text}
             </Space>
-          );
-        return (
-            <div className="list">
-                <List itemLayout="horizontal"
-                    dataSource={this.state.commentList}
-                    renderItem={item => (
-                        <List.Item actions={[
-                            <IconText icon={LikeOutlined} text={item.like} key="list-vertical-like-o" />,
-                            <IconText icon={MessageOutlined} text={item.commtnCount} key="list-vertical-message" />,
-                        ]}>
-                            <div className="item">
-                                <div className="top">
-                                    <div className="userInfo">
-                                        <Avatar size={50} src={item.userInfo.avatarUrl} />
-                                        <div>
-                                            <div className="name">{item.userInfo.name}</div>
-                                            <div className="time">{moment(item.time).format('YYYY-MM-DD hh:mm:ss')}</div>
-                                        </div>
-                                    </div>
-                                    {/* {item.canDelete && <div>
+        );
+        return <List itemLayout="horizontal"
+            dataSource={this.state.dataList}
+            renderItem={item => (
+                <List.Item actions={[
+                    <IconText icon={LikeOutlined} text={item.likeNum} key="list-vertical-like-o" />,
+                    <IconText icon={MessageOutlined} text={item.commentNum} key="list-vertical-message" />,
+                ]} onClick={() => this.goToDetail(item)}>
+                    <div className={css.item} key={item.id}>
+                        <div className={css.top}>
+                            <div className={css.userInfo}>
+                                <Avatar size={50} src={'localhost:8080/img/test2.jpg'} />
+                                <div>
+                                    <div className={css.name}>{item.name}</div>
+                                    <div className={css.time}>{moment(item.time).format('YYYY-MM-DD HH:mm:ss')}</div>
+                                </div>
+                            </div>
+                            {/* {item.canDelete && <div>
                                         <Button icon={<DeleteOutlined />}
                                             type={'link'}
                                             style={{ marginTop: '10px' }}
                                             danger />
                                     </div>} */}
-                                </div>
-                                <div className="comment">
-                                    {item.comment}
-                                </div>
-                            </div>
-                        </List.Item>
-                    )}>
-                </List>
+                        </div>
+                        <div className={css.comment}>
+                            {item.content}
+                        </div>
+                    </div>
+                </List.Item>
+            )}>
+        </List>
+    }
+
+    renderSendPost() {
+        return <div className={css.sendPost}>
+            <TextArea placeholder="说点什么吧..."
+                // row={1}
+                // autoSize={false}
+                onChange={this.contentValueChange}
+                value={this.state.contentValue}
+                style={{ outline: 'none' }} />
+            <div className={css.bottom}>
+                <div className={css.tips}>文明社会，文明发言</div>
+                <div className={css.btn}>
+                    <Button type={'primary'}
+                        style={{ marginRight: '10px' }}
+                        onClick={this.clearAll}
+                    >清空</Button>
+                    <Button type={'primary'}
+                        style={{ marginRight: '10px' }}
+                        onClick={this.releaseContent}
+                    >发表</Button>
+                </div>
+            </div>
+        </div>;
+    }
+
+    render() {
+        return (
+            <div className={css.postPage}>
+                {this.renderSendPost()}
+                <div className={css.list}>
+                    {this.renderList()}
+                </div>
             </div>
         )
     }
 }
+// export default Post;
+// export default (props)=><Post {...props} key={props.location.pathname}/>;
+export default withRouter(Post);
