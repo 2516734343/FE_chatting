@@ -27,7 +27,6 @@ export default class UserInfo extends Component {
         try {
             const resp = await getUserInfo({ userId: +userId });
             if (resp.status === 200) {
-                console.log(resp.data);
                 this.setState({
                     userInfo: Object.assign({}, resp.data)
                 });

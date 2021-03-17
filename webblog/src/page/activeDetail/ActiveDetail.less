@@ -1,3 +1,77 @@
 .detailPage {
-  
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: auto;
+  background-color: #fff;
+  .detailBox {
+    padding: 20px 20px 0px 20px;
+    .infoTop {
+      display: flex;
+      .avatar {
+
+      }
+      .userInfo {
+        margin-left: 10px;
+        text-align: left;
+        .name {
+          color: #252628;
+          display: block;
+        }
+        .time {
+          color: #a7a9b0;
+        }
+      }
+    }
+    .infoContent {
+      margin-top: 15px;
+      padding: 15px 15px 0px 15px;
+      text-align: left;
+      text-indent: 26px;
+    }
+    .infoBottom {
+      display: flex;
+      justify-content: flex-end;
+      margin-right: 20px;
+      margin-top: 10px;
+      color: #a7a9b0;
+      .icon {
+        font-size: 20px;
+        margin-right: 10px;
+        color: #a7a9b0;
+        cursor: pointer;
+      }
+      .like {
+        display: flex;
+        margin-right: 30px;
+      }
+      .comment {
+        display: flex;
+      }
+    }
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  :global {
+    .ant-divider-horizontal {
+      margin: 10px 0px;
+    }
+  }
+  .commentBox {
+    margin-top: 20px;
+    padding: 0px 20px 10px 20px;
+    .footer {
+      text-align: right;
+      margin-top: 15px;
+    }
+  }
+  .avatarList {
+    text-align: left;
+    padding: 0px 20px 10px 20px;
+    display: flex;
+  }
+
 }
