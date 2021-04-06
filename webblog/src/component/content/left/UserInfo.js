@@ -55,6 +55,7 @@ export default class UserInfo extends Component {
                                 <span>{userInfo.age}岁</span>
                                 {userInfo.sex === 1 ? <WomanOutlined className="woman" /> : <ManOutlined className="man" />}
                                 {/*// <span className="woman">♀</span> : <span className="man">♂</span>}*/}
+                                <span>{userInfo.city.split(' ')[1]}</span>
                             </div>
 
                         </div>
@@ -62,7 +63,7 @@ export default class UserInfo extends Component {
                     <div className="note">{`「${userInfo.signature}」`}</div>
                     <div className="tag">
                         {
-                            userInfo.tagList.map((item, index) => {
+                            userInfo.tagList.slice(0, 4).map((item, index) => {
                                 return <Tag style={{ borderRadius: '4px' }} className="tagSpan" color={getTagColors()} key={item.tagName}>{item.tagName}</Tag>
                             })
                         }

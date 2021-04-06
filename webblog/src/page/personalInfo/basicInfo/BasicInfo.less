@@ -1,0 +1,81 @@
+.basicInfo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 149px;
+  .userPhoto {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .basicInfoContent {
+    height: 100%;
+    padding: 50px;
+    background-repeat: no-repeat;
+    background-size: 100% 150%;
+    background-position: 10px -250px;
+    background-image: url('/src/static/assets/img/card.png');
+
+    .woman {
+      margin-left: 10px;
+      font-size: 17px;
+      color: palevioletred;
+    }
+
+    .man {
+      margin-left: 10px;
+      font-size: 17px;
+      color: #1890ff;
+    }
+
+    .label {
+      width: 70px;
+      text-align: right;
+      font-weight: 600;
+      margin-right: 12px;
+    }
+    .tag {
+      display: inline-block;
+      padding: 5px;
+      margin-right: 10px;
+      border-radius: 5px;
+      background-color: #ffffff;
+      cursor: pointer;
+  }
+  .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    display: inline-block;
+    background-size: 100% 100%;
+    cursor: pointer;
+    background-image: url(/src/static/assets/img/edit.png);
+  }
+  .save {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
+    display: inline-block;
+    background-size: 100% 100%;
+    cursor: pointer;
+    background-image: url(/src/static/assets/img/save.png);
+  }
+    :global {
+      .ant-row {
+        margin-bottom: 24px;
+      }
+      .ant-input {
+        width: 320px;
+        border-radius: 4px;
+        height: 32px;
+      }
+      .ant-select-selector {
+        text-align: left;
+        width: 320px;
+        border-radius: 4px;
+      }
+    }
+  }
+}

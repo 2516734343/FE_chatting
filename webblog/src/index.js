@@ -3,17 +3,17 @@ import ReactDOM from 'react-dom';
 import css from './index.less';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-// import 'antd/dist/antd.less';
 import { configure } from 'mobx';
 
 import { Provider } from 'mobx-react';
-import userStore from './store/userInfo';
-const stores = { userStore };
+import Store from './store/storeClasee';
+const stores = { Store };
 ReactDOM.render(
   <Provider {...stores}>
     <React.StrictMode>
       <App />
-    </React.StrictMode></Provider>,
+    </React.StrictMode>
+  </Provider >,
   document.getElementById('root')
 );
 

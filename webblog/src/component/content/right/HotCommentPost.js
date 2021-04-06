@@ -1,39 +1,34 @@
 import React, { Component } from 'react'
 import { FireTwoTone } from '@ant-design/icons';
-export default class HotCommentPost extends Component {
+import { getCommentTopList } from '@/remote';
+import RouteConfig from '@/routeConfig';
+import { withRouter } from "react-router";
+class HotCommentPost extends Component {
     state = {
-        hotCommentList: [
-            {
-                id: 1,
-                comment: '为什么90后不想结婚',
-                like: 840,
-                commtnCount: 867,
-            },
-            {
-                id: 1,
-                comment: '代孕',
-                like: 200,
-                commtnCount: 750,
-            },
-            {
-                id: 1,
-                comment: '新的一年你想说的话',
-                like: 140,
-                commtnCount: 640,
-            },
-            {
-                id: 1,
-                comment: '父母就地过年留守儿童怎么办？',
-                like: 140,
-                commtnCount: 140,
-            },
-            {
-                id: 1,
-                comment: '先成家还是先立业',
-                like: 120,
-                commtnCount: 120,
+        hotCommentList: []
+    }
+    componentDidMount() {
+        this.getTopFiveList();
+    }
+    getTopFiveList = async () => {
+        try {
+            const resp = await getCommentTopList({});
+            if (resp.status === 200) {
+                this.setState({
+                    hotCommentList: resp.data.list || []
+                })
             }
-        ]
+        } catch (e) {
+
+        } finally {
+            this.setState({
+                loaded: true
+            })
+        }
+
+    }
+    goToDetail = (item) => {
+        this.props.history.push(RouteConfig.activeDeatil + `?id=${item.id}`)
     }
     render() {
         return (
@@ -45,9 +40,9 @@ export default class HotCommentPost extends Component {
                 <div>
                     {
                         this.state.hotCommentList.map(item => {
-                            return <li>
-                                <span className="hotComment">{`#${item.comment}#`}</span>
-                                <span className="like">{item.commtnCount}</span>
+                            return <li key={item.id} onClick={() => this.goToDetail(item)}>
+                                <span className="hotComment">{`#${item.content.slice(0, 13)}...#`}</span>
+                                <span className="like">{item.commentNum}</span>
                             </li>
                         })
                     }
@@ -56,3 +51,5 @@ export default class HotCommentPost extends Component {
         )
     }
 }
+
+export default withRouter(HotCommentPost);

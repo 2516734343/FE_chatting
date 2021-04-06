@@ -1,39 +1,35 @@
 import React, { Component } from 'react'
 import { HeartTwoTone } from '@ant-design/icons';
-export default class HotPost extends Component {
+import { getLikeTopList } from '@/remote';
+import RouteConfig from '@/routeConfig';
+import { withRouter } from "react-router";
+class HotPost extends Component {
     state = {
-        hotList: [
-            {
-                id: 1,
-                comment: '焦虑的真正原因',
-                like: 240,
-                commtnCount: 250,
-            },
-            {
-                id: 1,
-                comment: '为什么90后不想结婚',
-                like: 200,
-                commtnCount: 250,
-            },
-            {
-                id: 1,
-                comment: '先成家还是先立业',
-                like: 140,
-                commtnCount: 250,
-            },
-            {
-                id: 1,
-                comment: '留守儿童',
-                like: 40,
-                commtnCount: 250,
-            },
-            {
-                id: 1,
-                comment: '新的一年你想说的话',
-                like: 20,
-                commtnCount: 250,
+        hotList: [],
+        loaded: false,
+    }
+    componentDidMount() {
+        this.getTopFiveList();
+    }
+    getTopFiveList = async () => {
+        try {
+            const resp = await getLikeTopList({});
+            if (resp.status === 200) {
+                this.setState({
+                    hotList: resp.data.list || []
+                })
             }
-        ]
+        } catch (e) {
+
+        } finally {
+            this.setState({
+                loaded: true
+            })
+        }
+
+    }
+    goToDetail = (item) => {
+        this.props.history.push(RouteConfig.activeDeatil + `?id=${item.id}`)
     }
     render() {
         return (
@@ -45,9 +41,9 @@ export default class HotPost extends Component {
                 <div>
                     {
                         this.state.hotList.map(item => {
-                            return <li>
-                                <span className="hotComment">{`#${item.comment}#`}</span>
-                                <span className="like">{item.like}</span>
+                            return <li key={item.id} onClick={() => this.goToDetail(item)}>
+                                <span className="hotComment">{`#${item.content.slice(0, 13)}...#`}</span>
+                                <span className="like">{item.likeNum}</span>
                             </li>
                         })
                     }
@@ -56,3 +52,5 @@ export default class HotPost extends Component {
         )
     }
 }
+
+export default withRouter(HotPost);

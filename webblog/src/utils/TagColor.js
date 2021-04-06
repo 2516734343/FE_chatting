@@ -5,6 +5,11 @@ export const getColors = () => {
   var g = Math.floor(Math.random() * 255);
   var b = Math.floor(Math.random() * 255);
   return "rgb(" + r + ',' + g + ',' + b + ")";
+  // return '#' +
+  //   (function (color) {
+  //     return (color += '0123401234abcabc'[Math.floor(Math.random() * 16)]) &&
+  //       (color.length == 6) ? color : arguments.callee(color);
+  //   })('');
 }
 
 
@@ -13,3 +18,9 @@ export const getTagColors = () => {
   const idx = Math.floor(Math.random() * 15, 10);
   return tagColor[idx];
 };
+
+
+export const getFontsize = () => {
+  const size = parseInt((Math.random() * 7) + 12, 10);
+  return size + 'px';
+}

@@ -1,0 +1,494 @@
+[
+  {
+      "name": "一条",
+      "value": 1
+  },
+  {
+      "name": "咸鱼",
+      "value": 1
+  },
+  {
+      "name": "觉得",
+      "value": 1
+  },
+  {
+      "name": "每天",
+      "value": 1
+  },
+  {
+      "name": "开心",
+      "value": 1
+  },
+  {
+      "name": "就是",
+      "value": 1
+  },
+  {
+      "name": "下班",
+      "value": 1
+  },
+  {
+      "name": "睡觉",
+      "value": 1
+  },
+  {
+      "name": "社交",
+      "value": 2
+  },
+  {
+      "name": "网络",
+      "value": 3
+  },
+  {
+      "name": "挑战",
+      "value": 1
+  },
+  {
+      "name": "在线",
+      "value": 5
+  },
+  {
+      "name": "社交网络",
+      "value": 7
+  },
+  {
+      "name": "结构",
+      "value": 4
+  },
+  {
+      "name": "具有",
+      "value": 3
+  },
+  {
+      "name": "节点",
+      "value": 1
+  },
+  {
+      "name": "海量性",
+      "value": 1
+  },
+  {
+      "name": "复杂性",
+      "value": 1
+  },
+  {
+      "name": "多维",
+      "value": 1
+  },
+  {
+      "name": "演化性",
+      "value": 1
+  },
+  {
+      "name": "特点",
+      "value": 2
+  },
+  {
+      "name": "拓扑",
+      "value": 1
+  },
+  {
+      "name": "随着",
+      "value": 1
+  },
+  {
+      "name": "时间",
+      "value": 2
+  },
+  {
+      "name": "不断",
+      "value": 3
+  },
+  {
+      "name": "演变",
+      "value": 3
+  },
+  {
+      "name": "演化",
+      "value": 4
+  },
+  {
+      "name": "规律",
+      "value": 2
+  },
+  {
+      "name": "需要",
+      "value": 2
+  },
+  {
+      "name": "进一步",
+      "value": 1
+  },
+  {
+      "name": "有效",
+      "value": 1
+  },
+  {
+      "name": "表达",
+      "value": 1
+  },
+  {
+      "name": "计算",
+      "value": 2
+  },
+  {
+      "name": "加以",
+      "value": 1
+  },
+  {
+      "name": "解决",
+      "value": 2
+  },
+  {
+      "name": "信息",
+      "value": 8
+  },
+  {
+      "name": "传播",
+      "value": 7
+  },
+  {
+      "name": "多源",
+      "value": 2
+  },
+  {
+      "name": "并发性",
+      "value": 2
+  },
+  {
+      "name": "相互影响",
+      "value": 2
+  },
+  {
+      "name": "形成",
+      "value": 2
+  },
+  {
+      "name": "路径",
+      "value": 1
+  },
+  {
+      "name": "多变",
+      "value": 1
+  },
+  {
+      "name": "内容",
+      "value": 1
+  },
+  {
+      "name": "群体",
+      "value": 4
+  },
+  {
+      "name": "方面",
+      "value": 3
+  },
+  {
+      "name": "已有",
+      "value": 2
+  },
+  {
+      "name": "研究",
+      "value": 4
+  },
+  {
+      "name": "对其",
+      "value": 1
+  },
+  {
+      "name": "产生",
+      "value": 1
+  },
+  {
+      "name": "发展",
+      "value": 1
+  },
+  {
+      "name": "消亡",
+      "value": 1
+  },
+  {
+      "name": "内部",
+      "value": 1
+  },
+  {
+      "name": "交互",
+      "value": 1
+  },
+  {
+      "name": "作用",
+      "value": 1
+  },
+  {
+      "name": "机理",
+      "value": 1
+  },
+  {
+      "name": "传统",
+      "value": 3
+  },
+  {
+      "name": "建模",
+      "value": 1
+  },
+  {
+      "name": "及其",
+      "value": 2
+  },
+  {
+      "name": "互动",
+      "value": 4
+  },
+  {
+      "name": "方法",
+      "value": 4
+  },
+  {
+      "name": "无法",
+      "value": 1
+  },
+  {
+      "name": "准确",
+      "value": 2
+  },
+  {
+      "name": "刻画",
+      "value": 1
+  },
+  {
+      "name": "大规模",
+      "value": 1
+  },
+  {
+      "name": "公众",
+      "value": 3
+  },
+  {
+      "name": "情绪",
+      "value": 2
+  },
+  {
+      "name": "漂移",
+      "value": 2
+  },
+  {
+      "name": "特征",
+      "value": 4
+  },
+  {
+      "name": "不能",
+      "value": 2
+  },
+  {
+      "name": "真实",
+      "value": 1
+  },
+  {
+      "name": "分析",
+      "value": 4
+  },
+  {
+      "name": "舆情",
+      "value": 2
+  },
+  {
+      "name": "倾向性",
+      "value": 1
+  },
+  {
+      "name": "个体",
+      "value": 3
+  },
+  {
+      "name": "行为",
+      "value": 2
+  },
+  {
+      "name": "主要",
+      "value": 1
+  },
+  {
+      "name": "局限",
+      "value": 2
+  },
+  {
+      "name": "用户",
+      "value": 1
+  },
+  {
+      "name": "个性化",
+      "value": 1
+  },
+  {
+      "name": "模型",
+      "value": 2
+  },
+  {
+      "name": "选择",
+      "value": 1
+  },
+  {
+      "name": "涉及",
+      "value": 1
+  },
+  {
+      "name": "过程",
+      "value": 1
+  },
+  {
+      "name": "表征",
+      "value": 1
+  },
+  {
+      "name": "问题",
+      "value": 2
+  },
+  {
+      "name": "立场",
+      "value": 1
+  },
+  {
+      "name": "变化",
+      "value": 1
+  },
+  {
+      "name": "兴趣",
+      "value": 1
+  },
+  {
+      "name": "基于",
+      "value": 1
+  },
+  {
+      "name": "传染病模型",
+      "value": 1
+  },
+  {
+      "name": "网络拓扑图",
+      "value": 1
+  },
+  {
+      "name": "以及",
+      "value": 3
+  },
+  {
+      "name": "统计",
+      "value": 1
+  },
+  {
+      "name": "推理",
+      "value": 1
+  },
+  {
+      "name": "描述",
+      "value": 2
+  },
+  {
+      "name": "模式",
+      "value": 1
+  },
+  {
+      "name": "效率",
+      "value": 1
+  },
+  {
+      "name": "精度",
+      "value": 1
+  },
+  {
+      "name": "存在",
+      "value": 1
+  },
+  {
+      "name": "不足",
+      "value": 1
+  },
+  {
+      "name": "视角",
+      "value": 1
+  },
+  {
+      "name": "缺乏",
+      "value": 1
+  },
+  {
+      "name": "空间",
+      "value": 1
+  },
+  {
+      "name": "双向性",
+      "value": 1
+  },
+  {
+      "name": "维度",
+      "value": 1
+  },
+  {
+      "name": "内在",
+      "value": 1
+  },
+  {
+      "name": "机制",
+      "value": 1
+  },
+  {
+      "name": "进行",
+      "value": 1
+  },
+  {
+      "name": "深度",
+      "value": 1
+  },
+  {
+      "name": "理论",
+      "value": 2
+  },
+  {
+      "name": "还原论",
+      "value": 1
+  },
+  {
+      "name": "角度",
+      "value": 1
+  },
+  {
+      "name": "带来",
+      "value": 1
+  },
+  {
+      "name": "特性",
+      "value": 1
+  },
+  {
+      "name": "因此",
+      "value": 1
+  },
+  {
+      "name": "以便",
+      "value": 1
+  },
+  {
+      "name": "相互作用",
+      "value": 1
+  },
+  {
+      "name": "驾驭",
+      "value": 1
+  },
+  {
+      "name": "能力",
+      "value": 1
+  },
+  {
+      "name": "一个",
+      "value": 1
+  },
+  {
+      "name": "平台",
+      "value": 1
+  },
+  {
+      "name": "什么",
+      "value": 1
+  }
+]

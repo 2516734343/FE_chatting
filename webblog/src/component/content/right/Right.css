@@ -4,6 +4,7 @@
 /* 好友推荐 */
 .people {
     background-color: #ffffff;
+    opacity: 0.85;
 }
 .people .user-recom {
     padding: 10px 0px 10px 10px;
@@ -44,6 +45,7 @@
 .hot {
     margin-top: 20px;
     background-color: #ffffff;
+    opacity: 0.85;
     padding-bottom: 10px;
 }
 .hot .hot-title {
@@ -75,6 +77,7 @@
     background-color: #ffffff;
     margin-top: 20px;
     padding-bottom: 10px;
+    opacity: 0.85;
 }
 .notice .notice-title {
     padding: 10px 0px 10px 10px;

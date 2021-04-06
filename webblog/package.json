@@ -2,6 +2,7 @@
   "name": "webblog",
   "version": "0.1.0",
   "private": true,
+  "proxy": "https://nlp.tencentcloudapi.com",
   "dependencies": {
     "@ant-design/icons": "4.0.5",
     "@babel/core": "7.12.3",
@@ -77,6 +78,7 @@
     "ts-pnp": "1.2.0",
     "url": "^0.11.0",
     "url-loader": "4.1.1",
+    "wangeditor": "^4.6.10",
     "web-vitals": "^0.2.4",
     "webpack": "4.44.2",
     "webpack-dev-server": "3.11.0",
@@ -184,6 +186,7 @@
     ]
   },
   "devDependencies": {
-    "antd-img-crop": "^3.14.1"
+    "antd-img-crop": "^3.14.1",
+    "tencentcloud-sdk-nodejs": "^4.0.89"
   }
 }

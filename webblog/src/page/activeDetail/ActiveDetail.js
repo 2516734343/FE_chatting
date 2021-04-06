@@ -130,6 +130,12 @@ class ActiveDetail extends React.Component {
                 <div className={css.avatar}>
                     <Avatar size={45} src={detailInfo.photo} />
                 </div>
+                {detailInfo.canDelete && <div>
+                    <Button icon={<DeleteOutlined />}
+                        type={'link'}
+                        style={{ marginTop: '10px' }}
+                        danger />
+                </div>}
                 <div className={css.userInfo}>
                     <span className={css.name}>{detailInfo.name}</span>
                     <span className={css.time}>{moment(detailInfo.time).startOf('hour').fromNow()}</span>
@@ -175,7 +181,7 @@ class ActiveDetail extends React.Component {
             <Divider />
             <div className={css.avatarList}>
                 <AvatarList avatarList={this.state.likeuserlist} />
-                {/* <span>觉得很赞</span> */}
+                <span style={{ marginLeft: '5px' }}>{this.state.likeuserlist.length}个趣友觉得很赞</span>
             </div>
             {this.state.loaded && <CommentList invitationId={this.state.detailInfo.id} ref={'comment'} />}
             {this.state.commented && this.renderCommentArea()}
