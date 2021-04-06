@@ -2,26 +2,52 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4739cead-3a3a-4486-a61b-cd0ceae1876e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/page/activeDetail/ActiveDetail.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/page/sendActive/SendActive.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/remote/common/loginout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/addUserModal/AddUserModal.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/addUserModal/AddUserModal.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/dataAnalysize/Area.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/dataAnalysize/DataAnalysize.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/dataAnalysize/DataAnalysize.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/page/dataAnalysize/userLikeDatas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/remote/getLocation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/remote/getTextWords.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/get.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/userLikeDatas.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpack.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpack.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/webpackDevServer.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/config/webpackDevServer.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/city.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/city.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/content/left/Activation.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/content/left/Activation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/content/left/Left.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/content/left/Left.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/content/left/ToolBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/content/left/ToolBar.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/content/left/UserInfo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/content/left/UserInfo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/content/right/HotCommentPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/content/right/HotCommentPost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/content/right/HotPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/content/right/HotPost.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/content/right/People.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/content/right/People.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/content/right/Right.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/content/right/Right.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/header/Header.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header/Header.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/header/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/header/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/layout/Layout.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/layout/Layout.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/importComponent.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/importComponent.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/allActive/Post.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/allActive/Post.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/activeDetail/ActiveDetail.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/activeDetail/ActiveDetail.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/activeDetail/ActiveDetail.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/activeDetail/ActiveDetail.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/activeDetail/comment/Comment.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/activeDetail/comment/Comment.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/allActive/Post.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/allActive/Post.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/page/allActive/SendPost.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/sendActive/SendActive.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/allActive/Post.less" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/allActive/Post.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/chatRoom/ChatRoom.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/chatRoom/ChatRoom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/homePage/HomePage.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/homePage/HomePage.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/homePage/HomePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/homePage/HomePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/page/login/Login.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/login/Login.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/page/login/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/page/login/Register.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/remote/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/remote/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/remote/service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/remote/service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/routeConfig.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/routeConfig.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/TagColor.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/TagColor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,14 +108,16 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/utils" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/utils" />
       <recent name="$PROJECT_DIR$/src/page/sendActive" />
       <recent name="$PROJECT_DIR$/src/page" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/utils" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -111,6 +139,10 @@
       <workItem from="1615354976709" duration="20386000" />
       <workItem from="1615722068779" duration="281000" />
       <workItem from="1615771320943" duration="1001000" />
+      <workItem from="1616913533310" duration="5146000" />
+      <workItem from="1616981014243" duration="214000" />
+      <workItem from="1616981265591" duration="39252000" />
+      <workItem from="1617153668339" duration="213000" />
     </task>
     <task id="LOCAL-00001" summary="fix: 增加接口配置文件">
       <created>1614834159533</created>
@@ -159,6 +191,19 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+    <option name="exactExcludedFiles">
+      <list>
+        <option value="$PROJECT_DIR$/node_modules/tencentcloud-sdk-nodejs/examples/cbs/v20170312/describe_disks.js" />
+        <option value="$PROJECT_DIR$/node_modules/tencentcloud-sdk-nodejs/examples/cvm/v20170312/describe_instances.js" />
+        <option value="$PROJECT_DIR$/node_modules/tencentcloud-sdk-nodejs/examples/cvm/v20170312/describe_zones.js" />
+        <option value="$PROJECT_DIR$/node_modules/tencentcloud-sdk-nodejs/examples/cvm/v20170312/run_instances.js" />
+        <option value="$PROJECT_DIR$/node_modules/tencentcloud-sdk-nodejs/examples/ecc/v20181213/ecc_correct.js" />
+        <option value="$PROJECT_DIR$/node_modules/tencentcloud-sdk-nodejs/examples/ecc/v20181213/ecc_ocr.js" />
+        <option value="$PROJECT_DIR$/node_modules/tencentcloud-sdk-nodejs/examples/hcm/v20181106/hcm_ocr.js" />
+        <option value="$PROJECT_DIR$/node_modules/tencentcloud-sdk-nodejs/examples/soe/v20180903/init_oral_process.js" />
+        <option value="$PROJECT_DIR$/node_modules/tencentcloud-sdk-nodejs/examples/soe/v20180903/transmit_oral_process.js" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix: 增加接口配置文件" />

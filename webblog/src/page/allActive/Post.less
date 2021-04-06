@@ -33,13 +33,18 @@
                 white-space: normal;
                 word-break: break-all;
             }
+    
         }
         :global {
             .ant-list-item {
+                position: relative;
                 display: flex;
                 flex-direction: column;
                 background-color: #ffffff;
+                opacity: 0.85;
                 margin-bottom: 15px;
+                background-size: cover;
+                // background-image: url('/src/static/assets/img/yezi.png');
             }
             .ant-list-item .ant-list-item-action {
                 width: 100%;
@@ -55,6 +60,8 @@
     .sendPost {
         position: relative;
         background-color: #ffffff;
+        opacity: 0.85;
+        padding: 8px;
         .bottom {
             display: flex;
             justify-content: space-between;
@@ -69,6 +76,14 @@
             }
         }
     
+    }
+    .line {
+        width: 100%;
+    position: absolute;
+    bottom: -3px;
+    height: 20px;
+    background-size: 100% 100%;
+        background-image: url(/src/static/assets/img/line.png);
     }
     &::-webkit-scrollbar {
         display: none;

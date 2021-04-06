@@ -5,7 +5,7 @@
     "code":"1100",
     "children":[
       {
-        "label":"北京",
+        "label":"北京市",
         "level":"1",
         "code":"1100"
       }
@@ -17,7 +17,7 @@
     "code":"1200",
     "children":[
       {
-        "label":"天津",
+        "label":"天津市",
         "level":"1",
         "code":"1200"
       }

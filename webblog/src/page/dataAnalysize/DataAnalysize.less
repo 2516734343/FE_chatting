@@ -1,0 +1,163 @@
+.dataAnalysizePage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #0F0D28;
+  display: flex;
+  flex-direction: column;
+  .header {
+    height: 80px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    letter-spacing: 5px;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 1px solid #fff;
+    box-shadow: 0px 0px 1px 3px #414141;
+  }
+  .content {
+    flex: 1;
+    display: flex;
+    padding: 0px 10px;
+    .left {
+      // flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-right: 1px solid #484752;
+      .userTags {
+        margin-top: 10px;
+        padding: 0px 10px;
+        flex: 1;
+        // border-bottom: 1px solid #fff;
+        // box-shadow: 0px 0px 1px 2px #414141;
+    
+    }
+    .userActive {
+      flex: 1;
+      padding: 10px 0px 0px 10px;
+      border-bottom: 1px solid #484752;
+      :global {
+        .ant-input-affix-wrapper {
+          background-color: #898a8c;
+        }
+        .ant-input {
+          background-color: #898a8c;
+        }
+      }
+    }
+  }
+  .middle {
+    flex: 1;
+    .userAera {
+        .area {
+    display: flex;
+    // margin: 5px 0px 10px 10px;
+    .title {
+      margin-bottom: 20px;
+      color: #fff;
+    }
+  }
+      border-bottom: 1px solid #484752;
+    }
+  }
+
+      .wordCloud {
+        padding: 10px;
+        border-radius: 10px;
+        flex: 1;
+        // width: 400px;
+        // height: 400px;
+        .word {
+          // display: inline-block;
+          margin: 5px;
+        }
+      }
+  .active {
+    text-align: left;
+    .title {
+      text-align: center;
+      color: #fff;
+      margin: 10px 0px;
+    }
+  } 
+}
+.wrap {
+  perspective:1000px;
+  width: 400px;
+  border-left: 1px solid #484752;
+  .cube {
+    height:150px;
+    width:150px;
+    position:relative;
+    margin: 150px auto;
+    transform-style:preserve-3d;
+    -webkit-animation:rotate 10s infinite;
+    -o-animation:rotate 10s infinite;
+    animation:rotate 10s infinite 2s;
+    div {
+      height:100%;
+      width:100%;
+      opacity:0.9;
+      position:absolute;
+      text-align:center;
+      background:#A7CAF1;
+      // color:#252626;
+      line-height:200px;
+      font-size:30px;
+      z-index: inherit;
+    }
+    .plane-1 {
+      transform:translateZ(100px);
+    }
+    .plane-2 {
+      transform:rotateY(180deg) translateZ(100px);
+    }
+    .plane-4 {
+      transform:rotateY(270deg) translateZ(100px);
+    }
+    .plane-3 {
+      transform:rotateY(90deg) translateZ(100px);
+    }
+    .plane-5 {
+      transform:rotateX(90deg) translateZ(100px);
+    }
+    .plane-6 {
+      transform:rotateX(270deg) translateZ(100px);
+    }
+    &:hover {
+      .plane-1 {
+        transform:translateZ(200px);
+      }
+      .plane-2 {
+        transform:rotateY(180deg) translateZ(200px);
+      }
+      .plane-4 {
+        transform:rotateY(270deg) translateZ(200px);
+      }
+      .plane-3 {
+        transform:rotateY(90deg) translateZ(200px);
+      }
+      .plane-5 {
+        transform:rotateX(90deg) translateZ(200px);
+      }
+      .plane-6{
+        transform:rotateX(270deg) translateZ(200px);
+      }
+    }
+  }
+  @keyframes rotate {
+    from {
+    transform:rotateY(0deg) rotateX(0deg);
+  }
+  to {
+    transform:rotateY(360deg) rotateX(360deg);
+  }
+}
+}
+}

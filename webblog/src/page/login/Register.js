@@ -212,9 +212,9 @@ export default class Register extends Component {
   onChangeCity = (value, selectedOptions) => {
     this.setState({
       selectCitys: value
-    },() => {
+    }, () => {
       this.setState({
-        city: this.state.selectCitys.join('')
+        city: this.state.selectCitys.join(' ')
       });
     });
 

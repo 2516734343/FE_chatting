@@ -1,0 +1,136 @@
+.chatPage{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  overflow: auto;
+  // padding: 20px;
+  background-color: #fff;
+  opacity: 0.85;
+  display: flex;
+  .userList {
+    height: 100%;
+    width: 70px;
+    background-color: #eaebf7;
+    border-right: 1px solid #f0f0f0;
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .active {
+      background-color: #fff;
+    }
+    :global {
+      .ant-list-item{
+        padding: 18px 10px;
+        border: none;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        // &:hover {
+        // // background-color: #ebf2ff;
+        // }
+      }
+    }
+
+  }
+  .chat_Box {
+    flex: 1;
+    .noOne {
+      width: 100%;
+      height: 100%;
+      background-size: 100% 100%;
+      background-image: url(/src/static/assets/img/chat.jpeg);
+      font-size: 40px;
+      color: currentColor;
+      font-family: cursive;
+      padding-top: 50%;
+      font-weight: 900;
+      .topText {
+        text-align: left;
+        margin-left: 56px;
+        margin-bottom: 20px;
+      }
+    }
+    .chatContent {
+      display: flex;
+      flex-direction: column;
+      min-height: 50%;
+      max-height: 70%;
+      border-bottom: 1px solid #f0f0f0;
+      padding-bottom: 10px;
+      .chat_partner {
+        height: 40px;
+        width: 100%;
+        border-bottom: 1px solid #f0f0f0;
+        text-align: center;
+        padding: 10px;
+        display: flex;
+        background-color: #ebf2ff;
+        flex-direction: column;
+      }
+      .chatBox {
+        flex: 1;
+  
+        .chatItems {
+          display: flex;
+          flex-direction: column;
+          padding: 10px;
+          height: 580px;
+          overflow: auto;
+          .my {
+            margin: 10px 0px;
+            justify-content: flex-end;
+            display: flex;
+            .myIcon {
+              margin-top: 12px;
+              margin-left: -4px;
+              color: #6D7097;
+            }
+            .myContent {
+              background-color: #6D7097;
+              color: #fff;
+              padding: 5px;
+              border-radius: 10px;
+              max-width: 250px;
+              text-align: left;
+              white-space: pre-wrap;
+            }
+          }
+          .target {
+            margin: 10px 0px;
+            justify-content: flex-start;
+            display: flex;
+            .targetIcon {
+              margin-top: 12px;
+              margin-right: -5px;
+              color: #ebf2ff;
+            }
+            .targetContent {
+              background-color: #ebf2ff;
+              padding: 5px;
+              border-radius: 10px;
+              max-width: 250px;
+              text-align: left;
+              white-space: pre-wrap;
+            }
+          }
+          &::-webkit-scrollbar {
+            display: none;
+          }
+        }
+       
+      }
+    }
+    .inpuBox {
+        margin-left: 20px;
+        margin-top: 20px;
+        .btn {
+         margin-top: 20px;
+          text-align: right;
+        }
+    }
+  }
+}

@@ -30,7 +30,6 @@ export default class CommentList extends Component {
         commentTotal: resp.data.total,
         commentList: resp.data.list
       })
-      console.log(this.state.commentList);
     }
   }
   render() {

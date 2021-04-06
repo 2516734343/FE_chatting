@@ -1,20 +1,21 @@
 import React, { Component } from 'react';
 import { withRouter } from "react-router";
-import { List, Avatar, Button, Skeleton, Space, Input, message } from 'antd';
-import { DeleteOutlined, MessageOutlined, LikeOutlined, EditOutlined } from '@ant-design/icons';
+import { List, Avatar, Button, Modal, Space, Input, message, Popconfirm } from 'antd';
+import { DeleteOutlined, MessageOutlined, LikeOutlined, ExclamationCircleOutlined } from '@ant-design/icons';
 import moment from 'moment';
 import css from './Post.less';
-import { getInvitationList, releasePost } from '@/remote';
+import { getInvitationList, releasePost, deleteInvitation } from '@/remote';
 import { observer } from 'mobx-react';
 import RouteConfig from '@/routeConfig';
 const { TextArea } = Input;
-
+const { confirm } = Modal;
 class Post extends Component {
     state = {
         dataList: [],
         loading: false,
+        initLoading: true,
         pageNo: 1,
-        pageSize: 10,
+        pageSize: 100,
         total: 0,
         contentValue: '',
     };
@@ -34,6 +35,31 @@ class Post extends Component {
             if (resp.status === 200) {
                 this.setState({
                     dataList: resp.data.list,
+                    total: resp.data.total,
+                })
+            }
+        } catch (e) {
+        } finally {
+            this.setState({
+                loading: false
+            })
+        }
+    };
+    onLoadMore = async () => {
+        this.setState({
+            loading: true,
+            dataList: this.state.dataList.concat([].map(() => ({ loading: true, name: {} }))),
+            pageNo: this.state.pageNo++
+        });
+        try {
+            const params = {
+                pageNo: this.state.pageNo,
+                pageSize: this.state.pageSize,
+            };
+            const resp = await getInvitationList(params);
+            if (resp.status === 200) {
+                this.setState({
+                    dataList: this.state.dataList.concat(resp.data.list),
                     total: resp.data.total,
                 })
             }
@@ -72,40 +98,83 @@ class Post extends Component {
     goToDetail = (item) => {
         this.props.history.push(RouteConfig.activeDeatil + `?id=${item.id}`)
     }
+    delete = async (e, id) => {
+        const resp = await deleteInvitation({ invitationId: id, userId: +window.localStorage.getItem('userId') });
+        if (resp.status === 200) {
+            message.success('删除成功');
+            this.getDataList();
+        }
+    }
+    cancel = () => {
+        return;
+    }
     renderList() {
+        const userId = +window.localStorage.getItem('userId');
         const IconText = ({ icon, text }) => (
             <Space>
                 {React.createElement(icon)}
                 {text}
             </Space>
         );
+        const loadMore =
+            !this.state.initLoading && !this.state.loading ? (
+                <div
+                    style={{
+                        textAlign: 'center',
+                        marginTop: 12,
+                        height: 32,
+                        lineHeight: '32px',
+                    }}
+                >
+                    <Button onClick={this.onLoadMore}>点击加载更多</Button>
+                </div>
+            ) : null;
         return <List itemLayout="horizontal"
             dataSource={this.state.dataList}
+            loading={this.state.loading}
+            // loadMore={loadMore}
             renderItem={item => (
                 <List.Item actions={[
                     <IconText icon={LikeOutlined} text={item.likeNum} key="list-vertical-like-o" />,
                     <IconText icon={MessageOutlined} text={item.commentNum} key="list-vertical-message" />,
-                ]} onClick={() => this.goToDetail(item)}>
+                ]} onClick={() => this.goToDetail(item)}
+                // style={{ backgroundImage: 'url(../../../../static/assets/img/flower.png)' }}
+                >
                     <div className={css.item} key={item.id}>
                         <div className={css.top}>
                             <div className={css.userInfo}>
-                                <Avatar size={50} src={'localhost:8080/img/test2.jpg'} />
+                                <Avatar size={50} src={item.photo} />
                                 <div>
                                     <div className={css.name}>{item.name}</div>
                                     <div className={css.time}>{moment(item.time).format('YYYY-MM-DD HH:mm:ss')}</div>
                                 </div>
                             </div>
-                            {/* {item.canDelete && <div>
-                                        <Button icon={<DeleteOutlined />}
-                                            type={'link'}
-                                            style={{ marginTop: '10px' }}
-                                            danger />
-                                    </div>} */}
+                            {
+                                (item.userId === userId || userId === 1 || userId === 5) &&
+                                <div>
+                                    <div>
+                                        <Popconfirm
+                                            title="确定要删除这条动态吗？"
+                                            onConfirm={(e) => { this.delete(e, item.id) }}
+                                            onCancel={this.cancel}
+                                            okText="删除"
+                                            cancelText="取消"
+                                        >
+                                            <Button icon={<DeleteOutlined />}
+                                                type={'link'}
+                                                onClick={(e) => { e.stopPropagation() }}
+                                                style={{ marginTop: '10px' }}
+                                                danger />
+                                        </Popconfirm>
+                                    </div>
+                                </div>
+                            }
                         </div>
                         <div className={css.comment}>
                             {item.content}
                         </div>
                     </div>
+                    <div className={css.line}></div>
                 </List.Item>
             )}>
         </List>
@@ -114,8 +183,7 @@ class Post extends Component {
     renderSendPost() {
         return <div className={css.sendPost}>
             <TextArea placeholder="说点什么吧..."
-                // row={1}
-                // autoSize={false}
+                onPressEnter={this.releaseContent}
                 onChange={this.contentValueChange}
                 value={this.state.contentValue}
                 style={{ outline: 'none' }} />

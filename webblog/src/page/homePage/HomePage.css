@@ -1,6 +1,26 @@
 .index {
     width: 100%;
     height: 100%;
-    background: url('/src/static/assets/img/cloud.jpeg');
-    background-size: 100% 100%;
+    background-size: cover;
+    background-color: #f9f9f9;
+}
+.blint {
+
+   background-image: url('/src/static/assets/img/star.jpg');
+}
+.black {
+
+ background-image: url('/src/static/assets/img/blue.jpg');
+}
+.girl {
+    background-image: url('/src/static/assets/img/color.webp');
+}
+.spring {
+    background-image: url('/src/static/assets/img/spring.jpg');
+}
+.katong {
+    background-image: url('/src/static/assets/img/katong.jpg');
+}
+.flower {
+    background-image: url('/src/static/assets/img/suihua.jpg');
 }
