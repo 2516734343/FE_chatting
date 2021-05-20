@@ -51,5 +51,7 @@ inquirer.prompt(prompts)
     })
     .catch((error) => {console.log(error);} );
 
+// 测试未push到远程的分支的删除
+
 
 
