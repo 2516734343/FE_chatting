@@ -3,7 +3,6 @@ const shell = require("shelljs");  // 执行文件操作
 const inquirer = require('inquirer');
 // 执行git提交命令
 let arr = [];
-// shell.exec(`git branch`);
 arr = shell.exec(`git branch`).stdout.replace(/[\n]/g, ',').split(',').map(item => item.trim()).filter(item => !!item);
 
 /**
@@ -46,7 +45,10 @@ let prompts = [{
 
 // JSON.stringify(answers, null, '  ')
 inquirer.prompt(prompts)
-    .then((answers) => { console.log(answers.branchs, '----'); })
+    .then((answers) => {
+        shell.exec(`git branch -D ${answers.branchs.join(' ')}`)
+        // console.log(answers.branchs.join(' '), '----');
+    })
     .catch((error) => {console.log(error);} );
 
 
