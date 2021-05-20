@@ -48,7 +48,7 @@ let prompts = [{
 // JSON.stringify(answers, null, '  ')
 inquirer.prompt(prompts)
     .then((answers) => {
-        shell.exec(`git branch -D ${answers.branchs.join(' ')}`);
+        shell.exec(`git branch -d ${answers.branchs.join(' ')}`);
         console.log('delete branch successfully');
     })
     .catch((error) => {console.log(chalk.red(error));} );
