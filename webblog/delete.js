@@ -1,6 +1,8 @@
 const shell = require("shelljs");  // 执行文件操作
 // const async = require('async')  // 这是node下一个异步处理的工具
 const inquirer = require('inquirer');
+
+const chalk = require('chalk')
 // 执行git提交命令
 let arr = [];
 arr = shell.exec(`git branch`).stdout.replace(/[\n]/g, ',').split(',').map(item => item.trim()).filter(item => !!item);
@@ -46,10 +48,10 @@ let prompts = [{
 // JSON.stringify(answers, null, '  ')
 inquirer.prompt(prompts)
     .then((answers) => {
-        shell.exec(`git branch -D ${answers.branchs.join(' ')}`)
-        // console.log(answers.branchs.join(' '), '----');
+        shell.exec(`git branch -D ${answers.branchs.join(' ')}`);
+        console.log('delete branch successfully');
     })
-    .catch((error) => {console.log(error);} );
+    .catch((error) => {console.log(chalk.red(error));} );
 
 
 
