@@ -26,6 +26,7 @@ const ModuleNotFoundPlugin = require('react-dev-utils/ModuleNotFoundPlugin');
 const ForkTsCheckerWebpackPlugin = require('react-dev-utils/ForkTsCheckerWebpackPlugin');
 const typescriptFormatter = require('react-dev-utils/typescriptFormatter');
 const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
+const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 
 const postcssNormalize = require('postcss-normalize');
 
@@ -608,6 +609,11 @@ module.exports = function (webpackEnv) {
             : undefined
         )
       ),
+      new BundleAnalyzerPlugin({
+        analyzerPort: 8090,
+        generateStatsFile: false,
+        // reportFilename: `/assets/size.html`,
+      }),
       // Inlines the webpack runtime script. This script is too small to warrant
       // a network request.
       // https://github.com/facebook/create-react-app/issues/5358

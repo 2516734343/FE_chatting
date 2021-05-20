@@ -149,26 +149,26 @@ class Post extends Component {
                                     <div className={css.time}>{moment(item.time).format('YYYY-MM-DD HH:mm:ss')}</div>
                                 </div>
                             </div>
-                            {
-                                (item.userId === userId || userId === 1 || userId === 5) &&
-                                <div>
-                                    <div>
-                                        <Popconfirm
-                                            title="确定要删除这条动态吗？"
-                                            onConfirm={(e) => { this.delete(e, item.id) }}
-                                            onCancel={this.cancel}
-                                            okText="删除"
-                                            cancelText="取消"
-                                        >
-                                            <Button icon={<DeleteOutlined />}
-                                                type={'link'}
-                                                onClick={(e) => { e.stopPropagation() }}
-                                                style={{ marginTop: '10px' }}
-                                                danger />
-                                        </Popconfirm>
-                                    </div>
-                                </div>
-                            }
+                            {/*{*/}
+                            {/*    (item.userId === userId || userId === 1 || userId === 5) &&*/}
+                            {/*    <div>*/}
+                            {/*        <div>*/}
+                            {/*            <Popconfirm*/}
+                            {/*                title="确定要删除这条动态吗？"*/}
+                            {/*                onConfirm={(e) => { this.delete(e, item.id) }}*/}
+                            {/*                onCancel={this.cancel}*/}
+                            {/*                okText="删除"*/}
+                            {/*                cancelText="取消"*/}
+                            {/*            >*/}
+                            {/*                <Button icon={<DeleteOutlined />}*/}
+                            {/*                    type={'link'}*/}
+                            {/*                    onClick={(e) => { e.stopPropagation() }}*/}
+                            {/*                    style={{ marginTop: '10px' }}*/}
+                            {/*                    danger />*/}
+                            {/*            </Popconfirm>*/}
+                            {/*        </div>*/}
+                            {/*    </div>*/}
+                            {/*}*/}
                         </div>
                         <div className={css.comment}>
                             {item.content}

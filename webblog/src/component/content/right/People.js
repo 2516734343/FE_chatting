@@ -16,7 +16,7 @@ export default class People extends Component {
             const resp = await getRecommendList({ userId: +window.localStorage.getItem('userId') });
             if (resp.status === 200) {
                 this.setState({
-                    userList: resp.data.list || []
+                    userList: resp.data.list.slice(0,5) || []
                 })
             }
         } catch (e) {

@@ -11,7 +11,7 @@ export default class RightView extends Component {
                 <People/>
                 <HotPost/>
                 <HotCommentPost/>
-                <Notice/>
+                {/*<Notice/>*/}
             </div>
         )
     }

@@ -41,7 +41,7 @@ export default class CommentList extends Component {
         dataSource={this.state.commentList}
         renderItem={item => (
           <List.Item
-            actions={[+userId === item.userId ? <span><DeleteOutlined style={{ color: 'red' }} /></span> : null]}
+          // actions={[+userId === item.userId ? <span><DeleteOutlined style={{ color: 'red' }} /></span> : null]}
           >
             <List.Item.Meta
               avatar={

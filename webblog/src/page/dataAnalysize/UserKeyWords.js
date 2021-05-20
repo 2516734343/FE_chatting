@@ -59,7 +59,7 @@ echarts.use(
   }
   getEcharts = () => {
     var chartDom = document.getElementById('keyWords');
-    var myChart = echarts.init(chartDom, 'dark');
+    var myChart = echarts.init(chartDom);
     var option;
 
     var data = this.props.Store.data;

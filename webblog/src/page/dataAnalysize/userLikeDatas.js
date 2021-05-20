@@ -229,7 +229,7 @@ let formdata = new FormData();
         const data = datas.map(it => it.value).slice(0, 19)
         const dataAxis = datas.map(it => it.name).slice(0, 19)
         var chartDom = document.getElementById('keyWordsBar');
-        var myChart = echarts.init(chartDom, 'dark');
+        var myChart = echarts.init(chartDom);
         var yMax = 500;
         var dataShadow = [];
 

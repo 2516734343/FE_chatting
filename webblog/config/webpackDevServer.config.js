@@ -107,7 +107,7 @@ module.exports = function (proxy, allowedHost) {
         target: 'http://localhost:8080',
       },
       '/img/': {
-        target: 'http://172.18.36.58:8080'
+        target: 'http://172.18.36.34:8080'
       }
     },
     before(app, server) {

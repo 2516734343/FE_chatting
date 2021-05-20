@@ -4,7 +4,7 @@
 .userInfo {
     padding: 10px;
     background-color: #fff;
-    opacity: 0.85;
+    opacity: 0.9;
 }
 .basicInfo {
     display: flex;
@@ -53,7 +53,7 @@
     margin-top: 20px;
     width: 100%;
     font-size: 16px;
-    opacity: 0.85;
+    opacity: 0.9;
 }
 .toolBar .ant-menu-item-active {
     background-color: #e6f7ff;
@@ -63,7 +63,7 @@
     width: 100%;
     height: 430px;
     background-color: #fff;
-    opacity: 0.85;
+    opacity: 0.9;
     padding-bottom: 20px;
 }
 .activation #activeTable {

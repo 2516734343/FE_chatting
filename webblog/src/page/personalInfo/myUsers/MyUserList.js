@@ -85,6 +85,7 @@ export default class MyUserList extends Component {
           }
         </div>
         <Divider style={{ margin: '0px 0px 20px 0px' }} />
+        <p>我的好友</p>
         {
           this.state.userList.length > 0 ?
             <List itemLayout="horizontal"

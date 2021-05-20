@@ -52,7 +52,7 @@ export default class UserTags extends Component {
   }
   getEcharts = () => {
     var chartDom = document.getElementById('tagCharts');
-    var myChart = echarts.init(chartDom, 'dark');
+    var myChart = echarts.init(chartDom);
     var option;
 
     option = {

@@ -33,7 +33,7 @@ class ToolBar extends Component {
                     </Menu.Item>
                     {/* <Menu.Item key="3" icon={<TeamOutlined style={{ fontSize: '20px', marginRight: '20px' }} />}>好友列表</Menu.Item> */}
                     <Menu.Item key="4" icon={<SolutionOutlined style={{ fontSize: '20px', marginRight: '20px' }} />}>
-                        <Link to={RouteConfig.personalInfo}>个人资料</Link></Menu.Item>
+                        <Link to={RouteConfig.personalInfo}>个人中心</Link></Menu.Item>
                     {/* <Menu.Item key="5" icon={<AreaChartOutlined style={{ fontSize: '20px', marginRight: '20px' }} />}>数据管理</Menu.Item> */}
                 </Menu>
             </div>
