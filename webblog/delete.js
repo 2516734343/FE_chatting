@@ -4,7 +4,7 @@ const inquirer = require('inquirer');
 
 const chalk = require('chalk');
 
-let branchList = [800]; // 本地分支
+let branchList = []; // 本地分支
 let noMergedList = []; // 本地未push的分支
 let selectNoMerge = []; // 选中了未push的
 let selectMerge = []; // 选中了已经push的
